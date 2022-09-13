@@ -1,0 +1,229 @@
+vi:
+  base_title: "Maxe"
+  maxe: "maxe"
+  maxe_admin: "maxe admin"
+  success_signup: "Chào mừng bạn đến với ứng dụng! Liên hệ quản trị viên để  được kích hoạt tài khoản"
+  not_found: "Không tìm thấy"
+  fail_signup: "Có lỗi xảy ra. Vui lòng thử lại"
+  danger: "Hãy đăng nhập"
+  incorrect_user: "Bạn không thể  sửa thông tin của người khác"
+  incorrect_admin: "Bạn không phải là admin"
+  ready: "Bắt đầu"
+  continue: "Tiếp tục"
+  view: "Xem lại"
+  wrong_answer: "Câu trả lời sai"
+  correct_answer: "Câu trả lời đúng"
+  layouts:
+    header:
+      login: "Đăng nhập"
+      subjects: "Môn học"
+      languages: "Ngôn ngữ"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
+      account: "Tài khoản"
+      log_out: "Đăng xuất"
+    header_admin:
+      login: "Đăng nhập"
+      subjects: "Quản lý môn học"
+      languages: "Ngôn ngữ"
+      users: "Quản lý người dùng"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
+      account: "Tài khoản"
+      log_out: "Đăng xuất"
+      questions: "Quản lý câu hỏi"
+  static_pages:
+    home:
+      heading: "Trang chủ"
+      welcome: "Chào mừng đến với Maxe"
+      intro: "Hệ thống quản lý kỳ thi"
+      signup: "Đăng ký ngay"
+      create_exam: "Tạo bài thi"
+      all_exam: "Tất cả"
+      create_date: "Ngày tạo"
+      subject: "Môn học"
+      status: "Trạng thái"
+      duration: "Thời gian (phút)"
+      ques_num: "Số  câu hỏi"
+      score: "Điểm số "
+      no_exam: "Chưa có bài thi"
+  subjects:
+    index:
+      title: "Tất cả môn học"
+      name: "Tên môn học"
+      ques_num: "Số câu hỏi"
+      duration: "Thời gian (phút)"
+      score_pass: "Điểm đạt"
+      description: "Mô tả"
+      no_subject: "Chưa có môn học"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Địa chỉ email"
+      password: "Password"
+      signup: "Đăng ký ngay"
+      new_user: "Bạn là người dùng mới?"
+      remember_me: "Ghi nhớ tài khoản"
+    create:
+      invalid_email_password_combination: "Email và password không trùng khớp"
+      login_success: "Đăng nhập thành công"
+      account_not_activated: "Tài khoản chưa được kích hoạt. Liên hệ quản trị viên để  được kích hoạt tài khoản"
+  registrations:
+    new:
+      title: "Đăng ký"
+    edit:
+      title: "Chỉnh sửa tài khoản"
+      update: "Cập nhật"
+  exams:
+    create:
+      success_create: "Tạo bài kiểm tra thành công"
+      fail_create: "Tạo bài kiểm tra thất bại"
+    show:
+      title: "Bài kiểm tra"
+      score: "Điểm số"
+    do_test:
+      submit: "Nộp bài"
+      question: "Câu hỏi"
+      time_remaining: "Thời gian còn lại:"
+    view_test:
+      question: "Câu hỏi"
+  admin:
+    static_pages:
+      index:
+        title: "Trang chủ"
+        heading: "Tổng quan"
+        name: "Tên môn học"
+        total_ques: "Tổng số câu hỏi"
+        num_created: "Số bài kiểm tra đã tạo"
+        num_passed: "Số bài kiểm tra đạt"
+        description: "Mô tả"
+    users:
+      index:
+        title: "Quản lý người dùng"
+        heading: "Tất cả người dùng"
+        name: "Tên"
+        email: "Địa chỉ Email"
+        attended: Đã tham gia (môn học)
+        passed: "Đã hoàn thành (môn học)"
+        action: "Hành động"
+        no_user: "Chưa có môn học"
+    account_activations:
+      update:
+        success_activated: "Kích hoạt tài khoản thành công"
+        success_inactivated: "Vô hiệu hóa tài khoản thành công"
+        fail_activated: "Kích hoạt thất bại"
+    profile:
+      update:
+        update_success: "Thông tin đã được thay đổi"
+        update_false: "Cập nhật thông tin thất bại"
+      form:
+        name: "Tên"
+        email: "Địa chỉ email"
+        password: "Password"
+        password_confirmation: "Nhập lại password"
+      edit:
+        edit: "Chỉnh sửa thông tin"
+        save_changes: "Lưu thay đổi"
+        intro: "Chỉnh sửa thông tin"
+    questions:
+      form:
+        add: "+ Thêm đáp án"
+        is_correct: "câu trả lời đúng"
+        ques_content: "Nội dung câu hỏi"
+        subject: "Môn học"
+        type: "Loại câu hỏi"
+        save: "Lưu"
+        submit: "Tạo câu hỏi"
+      answer_fields:
+        answer_content: "Nội dung"
+        is_correct: "Đúng"
+        remove: "Xóa câu đáp án"
+      new:
+        title: "Câu hỏi mới"
+      create:
+        create_failed: "Tạo câu hỏi chưa thành công"
+        created: "Tạo câu hỏi thành công!"
+      index:
+        all_question: "Tất cả câu hỏi"
+        create: "Tạo câu hỏi mới"
+    subjects:
+      index:
+        title: "Tất cả môn học"
+        name: "Tên môn học"
+        total_ques: "Tổng số câu hỏi"
+        ques_num: "Số câu hỏi (trong bài kiểm tra)"
+        duration: "Thời gian (phút)"
+        score_pass: "Điểm đạt"
+        description: "Mô tả"
+        no_subject: "Chưa có môn học"
+        create_new_subject: "Tạo môn học mới"
+      new:
+        title: "Tạo môn học mới"
+        create: "Tạo mới"
+      create:
+        success_create: "Đã tạo thành công một môn học mới"
+        fail_create: "Tạo môn học mới thất bại"
+      edit:
+        title: "Chỉnh sửa môn học"
+        save_changes: "Lưu thay đổi"
+      update:
+        update_success: "Môn học đã được thay đổi"
+        update_false: "Cập nhật môn học thất bại"
+      form:
+        name: "Tên môn học"
+        question_number: "Số câu hỏi (trong bài kiểm tra)"
+        duration: "Thời gian (phút)"
+        score_pass: "Điểm đạt"
+        description: "Mô tả"
+      destroy:
+        subject_deleted: "Đã xóa môn học"
+        subject_delete_fail: "Xóa nmôn học thất bại"
+    exams:
+      index:
+        title: "Danh sách bài kiểm tra"
+        heading: " - Danh sách bài kiểm tra"
+        create_date: "Ngày tạo"
+        subject: "Môn học"
+        status: "Trạng thái"
+        ques_num: "Số  câu hỏi"
+        score: "Điểm số "
+        no_exam: "Chưa có bài thi"
+      show:
+        title: "Bài kiểm tra"
+        score: "Điểm số "
+        question: "Câu hỏi"
+  shared:
+    user_form:
+      name: "Tên"
+      email: "Địa chỉ email"
+      password: "Password"
+      password_confirmation: "Nhập lại password"
+    edit_profile:
+      edit: "Chỉnh sửa thông tin"
+      save_changes: "Lưu thay đổi"
+      intro: "Chỉnh sửa thông tin"
+  question:
+    type:
+      single: "Trắc nghiệm"
+      multiple: "Chọn nhiều đáp án"
+  exam:
+    status:
+      ready: "Bắt đầu"
+      doing: "Đang làm"
+      completed: "Hoàn thành"
+      failed: "Không đạt"
+      passed: "Đạt"
+  activerecord:
+    errors:
+      models:
+        subject:
+          attributes:
+            score_pass:
+              cannot_greater: "Không thể lớn hơn số câu hỏi"
+            name:
+              unique: "đã tồn tại"
+        question:
+          attributes:
+            answers:
+              not_enough_answer: "Không đủ đáp án cho câu hỏi"
+              not_valid_correct_answer_number: "Số câu trả lời đúng không hợp lệ"

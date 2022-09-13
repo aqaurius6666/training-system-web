@@ -1,0 +1,229 @@
+en:
+  base_title: "Maxe"
+  maxe: "maxe"
+  maxe_admin: "maxe admin"
+  success_signup: "Welcome to the Maxe App! Contact the administrator to activate the account"
+  not_found: "Not found"
+  fail_signup: "Errors occurred. Please try again"
+  danger: "Please log in"
+  incorrect_user: "Incorrect user"
+  incorrect_admin: "Incorrect admin"
+  ready: "Start"
+  continue: "Continue"
+  view: "View"
+  wrong_answer: "Wrong answer"
+  correct_answer: "Correct answer"
+  layouts:
+    header:
+      login: "Login"
+      subjects: "Subjects"
+      languages: "Languages"
+      en: "English"
+      vi: "Vietnamese"
+      account: "Account"
+      log_out: "Log out"
+    header_admin:
+      login: "Login"
+      subjects: "Manage subjects"
+      users: "Manage users"
+      languages: "Languages"
+      en: "English"
+      vi: "Vietnamese"
+      account: "Account"
+      log_out: "Log out"
+      questions: "Manage questions"
+  static_pages:
+    home:
+      heading: "Home"
+      welcome: "Welcome to Maxe"
+      intro: "The exam management"
+      signup: "Sign up now!"
+      create_exam: "Create Exam"
+      all_exam: "All"
+      create_date: "Create Date"
+      subject: "Subject"
+      status: "Status"
+      duration: "Duration(min)"
+      ques_num: "Question number"
+      score: "Score"
+      no_exam: "No exam yet"
+  subjects:
+    index:
+      title: "All subjects"
+      name: "Subject name"
+      ques_num: "Question number"
+      duration: "Duration (min)"
+      score_pass: "Score to pass"
+      description: "Description"
+      no_subject: "No subject yet"
+  sessions:
+    new:
+      login: "Login"
+      email: "Email"
+      password: "Password"
+      signup: "Sign up now!"
+      new_user: "New user?"
+      remember_me: "Remember me on this computer"
+    create:
+      invalid_email_password_combination: "Invalid email/password combination"
+      login_success: "Log in successfully"
+      account_not_activated: "Account not activated. Contact the administrator to activate the account"
+  registrations:
+    new:
+      title: "Sign up"
+    edit:
+      title: "Edit account"
+      update: "Update"
+  exams:
+    create:
+      success_create: "Successfully created a new exam"
+      fail_create: "New creation failed"
+    show:
+      title: "Exam"
+      score: "Score"
+    do_test:
+      submit: "Submit"
+      question: "Question"
+      time_remaining: "Time Remaining:"
+    view_test:
+      question: "Question"
+  admin:
+    static_pages:
+      index:
+        title: "Home page"
+        heading: "Overview"
+        name: "Subject name"
+        total_ques: "Total number of questions"
+        num_created: "Number of times the test was created"
+        num_passed: "Number of tests passed"
+        description: "Description"
+    users:
+      index:
+        title: "Manage users"
+        heading: "All users"
+        name: "Name"
+        email: "Email"
+        attended: "Attended (subject)"
+        passed: "Passed (subject)"
+        action: "Action"
+        no_user: "No user yet"
+    account_activations:
+      update:
+        success_activated: "Account activated"
+        success_inactivated: "Disable successfully"
+        fail_activated: "Activation failed"
+    profile:
+      update:
+        update_success: "Profile updated"
+        update_false: "Update failed"
+      form:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirm password"
+      edit:
+        edit: "Edit user"
+        save_changes: "Save changes"
+        intro: "Update your profile"
+    questions:
+      form:
+        add: "+ Add another answer"
+        is_correct: "is correct"
+        ques_content: "Question content"
+        subject: "Subject"
+        type: "Question type"
+        save: "Save"
+        submit: "Create question"
+      answer_fields:
+        answer_content: "Answer content"
+        is_correct: "Is Correct"
+        remove: "Remove this answer"
+      new:
+        title: "New question"
+      create:
+        create_failed: "Created failed!"
+        created: "Created success!"
+      index:
+        all_question: "All question"
+        create: "Create new question"
+    subjects:
+      index:
+        title: "All subjects"
+        name: "Subject name"
+        total_ques: "Total number of questions"
+        ques_num: "Question number (in the test)"
+        duration: "Duration (min)"
+        score_pass: "Score to pass"
+        description: "Description"
+        no_subject: "No subject yet"
+        create_new_subject: "New subjects"
+      new:
+        title: "New subjects"
+        create: "Create"
+      create:
+        success_create: "Successfully created a new subject"
+        fail_create: "New creation failed"
+      edit:
+        title: "Edit subjects"
+        save_changes: "Save changes"
+      update:
+        update_success: "Subject updated"
+        update_false: "Update failed"
+      form:
+        name: "Subject name"
+        question_number: "Question number (in the test)"
+        duration: "Duration (min)"
+        score_pass: "Score to pass"
+        description: "Description"
+      destroy:
+        subject_deleted: "Subject deleted"
+        subject_delete_fail: "Subject delete fail"
+    exams:
+      index:
+        title: "List of test"
+        heading: "'s tests"
+        ques_num: "Question number"
+        create_date: "Create Date"
+        subject: "Subject"
+        status: "Status"
+        score: "Score"
+        no_exam: "No exam yet"
+      show:
+        title: "Exam"
+        score: "Score"
+        question: "Question"
+  shared:
+    user_form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirm password"
+    edit_profile:
+      edit: "Edit user"
+      save_changes: "Save changes"
+      intro: "Update your profile"
+  question:
+    type:
+      single: "Single choice"
+      multiple: "Multiple choice"
+  exam:
+    status:
+      ready: "Start"
+      doing: "Doing"
+      completed: "Completed"
+      failed: "Failed"
+      passed: "passed"
+  activerecord:
+    errors:
+      models:
+        subject:
+          attributes:
+            score_pass:
+              cannot_greater: "can't be greater than question number"
+            name:
+              unique: "already exist"
+        question:
+          attributes:
+            answers:
+              not_enough_answer: "Not enough answer for question"
+              not_valid_correct_answer_number: "Not valid right answer number"
