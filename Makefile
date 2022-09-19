@@ -21,6 +21,7 @@ down-prod:
 .PHONY: up-prod down-prod
 
 build:
+	@ echo ${TAG}
 	@ docker build -t ${IMAGE_REPOSITORY}:${TAG} --target ${TARGET} .
 
 push:
