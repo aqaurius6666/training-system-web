@@ -1,4 +1,4 @@
-IMAGE_REPOSITORY := aqaurius6666/training-system-web
+IMAGE_REPOSITORY := ${IMAGE_REPOSITORY}
 TAG := ${TAG}
 BUILD_TARGET := production
 
@@ -21,8 +21,7 @@ down-prod:
 .PHONY: up-prod down-prod
 
 build:
-	@ echo ${TAG}
-	@ docker build -t ${IMAGE_REPOSITORY}:${TAG} --target ${TARGET} .
+	@ docker build -t ${IMAGE_REPOSITORY}:${TAG} --target ${BUILD_TARGET} -f Dockerfile . 
 
 push:
 	@ docker push ${IMAGE_REPOSITORY}:${TAG}
