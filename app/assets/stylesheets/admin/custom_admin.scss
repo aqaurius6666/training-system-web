@@ -1,0 +1,115 @@
+@import "color.scss";
+
+a {
+  text-decoration: none !important;
+}
+
+.icon {
+  display: inline-block;
+  padding: 1px;
+  font-size: 20px !important;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.add-icon,
+.edit-icon {
+  margin-right: 5px;
+}
+
+.delete-icon,
+.inactive-icon {
+  color: red;
+}
+
+.edit-icon {
+  font-size: 17px !important;
+  color: $primary;
+}
+
+.active-icon {
+  color: $success;
+}
+
+.mg-top-10 {
+  margin-top: 10px;
+}
+
+.active {
+  color: $active;
+}
+
+.inactive {
+  color: red
+}
+
+.custom-select {
+  width: 100% !important;
+}
+
+.answer-content {
+  width: 11.45% !important;
+}
+
+.is-correct {
+  width: 8% !important;
+}
+
+.check-box {
+  width: 4% !important;
+}
+
+.check-box {
+  height: 12px !important;
+  width: 20px !important;
+}
+
+.answer-input {
+  margin-bottom: 0;
+}
+
+.btn.remove_fields {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+
+  vertical-align: middle;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+  padding: 3px 6px;
+
+  background-color: red;
+  color: white;
+}
+
+.search-form {
+  display: flex;
+  height: 34px;
+
+  .form-control,
+  .btn-primary {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.import-button {
+  display: flex;
+  justify-content: flex-end;
+
+  .btn-default {
+    height: 34px;
+  }
+
+  #file {
+    flex: 0.64;
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding: 5px 5px
+  }
+}
