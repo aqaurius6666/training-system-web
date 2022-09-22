@@ -21,11 +21,12 @@ down-prod:
 .PHONY: up-prod down-prod
 
 build:
-	@ docker build -t ${IMAGE_REPOSITORY}:${TAG} --target ${BUILD_TARGET} -f Dockerfile . 
+	@ docker build -t ${IMAGE_REPOSITORY}:${TAG} --target ${BUILD_TARGET} -f Dockerfile .
 
 push:
 	@ docker push ${IMAGE_REPOSITORY}:${TAG}
 
 local:
-	@ bin/rails s -b 0.0.0.0 -p ${PORT} 
+	@ bin/rails s -b 0.0.0.0 -p ${PORT}
 
+# run cmd: export $(grep -v '^#' .env | xargs)
