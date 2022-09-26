@@ -19,7 +19,7 @@ class Exam < ApplicationRecord
 
   scope :newest, ->{order(created_at: :desc)}
   scope :by_user, ->(user_id){where(user_id: user_id)}
-  scope :by_id, ->(id){where(id: id)}
+  scope :by_subject_id, ->(id){where(subject_id: id)}
   scope :by_statuses, ->(statuses){where(status: statuses)}
   delegate :name, to: :subject, prefix: true
 
@@ -39,11 +39,11 @@ class Exam < ApplicationRecord
     I18n.t("exam.status.#{type}")
   end
 
-  def check_status exam
+  def check_result exam
     if exam.ready? || exam.doing?
       ""
     else
-      "#{exam.result}/#{exam.subject.question_number}"
+      "#{exam.result} / #{exam.subject.question_number}"
     end
   end
 
